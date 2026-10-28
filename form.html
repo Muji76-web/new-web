@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration - Form</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    #registration-form legend {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      padding: 0 10px;
+    }
+    #registration-form fieldset { border: none; margin: 0; padding: 0; }
+    .required { color: #dc2626; }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <span class="logo">🎓 EduReg University</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="form.html" class="active">Register</a></li>
+      <li><a href="thanks.html">Thank You</a></li>
+    </ul>
+  </nav>
+
+  <header id="banner" class="small">
+    <span class="badge">Step 1 of 2</span>
+    <h1>Registration Form</h1>
+    <p>Please fill in all the required details</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Inline CSS -->
+    <p style="text-align:center; color:#6b7280; margin-top:0;">
+      Fields marked with <span class="required">*</span> are required.
+    </p>
+
+    <form id="registration-form" action="thanks.html" method="get">
+      <fieldset>
+        <legend>Student Details</legend>
+
+        <div class="form-group">
+          <label for="fullname">Full Name <span class="required">*</span></label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regno">Registration No <span class="required">*</span></label>
+          <input type="text" id="regno" name="regno" placeholder="e.g. 2026-CS-001" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX">
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-row">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="program">Program <span class="required">*</span></label>
+          <select id="program" name="program" required>
+            <option value="">-- Select Program --</option>
+            <option>Computer Science</option>
+            <option>Software Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Business Administration</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn secondary">Reset</button>
+      </div>
+    </form>
+
+  </main>
+
+  <footer>&copy; 2026 EduReg University &bull; Student Registration Website</footer>
+
+</body>
+</html>

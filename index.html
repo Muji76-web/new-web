@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration - Home</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    #welcome p { font-size: 1.02rem; margin: 0 0 10px; }
+    .highlight { color: var(--blue); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <span class="logo">🎓 EduReg University</span>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="form.html">Register</a></li>
+      <li><a href="thanks.html">Thank You</a></li>
+    </ul>
+  </nav>
+
+  <header id="banner">
+    <span class="badge">Admissions Open 2026</span>
+    <h1>Student Registration Portal</h1>
+    <p>Begin your academic journey with us today</p>
+  </header>
+
+  <main class="container">
+
+    <section id="welcome">
+      <img class="profile-img" src="images/student.png" alt="Student profile">
+      <div>
+        <h3>Welcome, Future Students!</h3>
+        <p>Our online portal makes enrolling <span class="highlight">quick, simple and secure</span>.
+           Fill out the registration form, submit your details, and receive instant confirmation.</p>
+        <!-- Inline CSS -->
+        <p style="color: #b45309; font-weight: 600; font-style: italic;">
+          Registration closes on 30 November 2026 — register early!
+        </p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Why Register With Us?</h2>
+    <p class="subtitle">Everything you need to get started in three easy steps</p>
+
+    <section id="cards">
+      <div class="card">
+        <div class="icon">📝</div>
+        <h3>Easy Form</h3>
+        <p>A short, clear registration form that takes only a few minutes to complete.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Secure Data</h3>
+        <p>Your personal information is handled carefully and kept confidential.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✅</div>
+        <h3>Instant Confirmation</h3>
+        <p>Get a confirmation page as soon as your registration is submitted.</p>
+      </div>
+    </section>
+
+    <div id="cta">
+      <a class="btn" href="form.html">Register Now</a>
+    </div>
+
+  </main>
+
+  <footer>&copy; 2026 EduReg University &bull; Student Registration Website</footer>
+
+</body>
+</html>
